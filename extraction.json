@@ -1,0 +1,31 @@
+{
+  "app": "revenue-lens",
+  "mode": "sales",
+  "source": "Michaelhoang8/portfolio-lab",
+  "backend_definitions": {
+    "capabilities": [
+      "enrich",
+      "table"
+    ],
+    "data_apps": [
+      "parse",
+      "safe_csv",
+      "sales"
+    ],
+    "validation": [
+      "ConflictError",
+      "NotFoundError",
+      "ValidationError"
+    ],
+    "json_input": [
+      "decode",
+      "read_exact"
+    ],
+    "db": [
+      "SCHEMA",
+      "connect",
+      "initialize",
+      "rows"
+    ]
+  }
+}

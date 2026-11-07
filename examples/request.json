@@ -1,0 +1,6 @@
+{
+  "path": "/api/data/sales",
+  "body": {
+    "csv": "date,category,amount\n2026-01-01,A,10.00\n2026-01-02,A,-2.00\n"
+  }
+}

@@ -1,0 +1,1 @@
+"""Revenue Lens: standalone application."""
