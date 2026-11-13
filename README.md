@@ -13,9 +13,13 @@ python run.py
 ```
 
 Open http://127.0.0.1:8000/. Use `python run.py --port 8001` to run alongside another app.
-Use the built-in **Load sample** / **Load an example** action for fictional input.
+The app initially displays a report from its fictional sample. Open **Data & columns** to replace the CSV or change column mappings.
 
 The local adapter creates an empty `data/revenue-lens.db`; this analysis app has no persistent tables. The data directory is ignored by Git. `--database /path/to/app.db` selects another database. Uploaded analysis input is processed in memory. No other repository or shared service is required.
+
+## Interface
+
+The report leads with the net amount and a monthly column chart, with category totals beside it. Positive and negative totals use opposite sides of a shared zero baseline; chart pages preserve the scale across all groups. CSV input and column mappings open separately. Rejected records and detailed analysis remain available below the report, including export controls. Monthly charts scroll within their panel on narrow screens.
 
 ## API example
 
